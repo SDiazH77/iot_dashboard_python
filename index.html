@@ -6,7 +6,7 @@
     <h2>Humedad: <span id="humedad">--</span> %</h2>
     <p>Fecha: <span id="fecha">--</span></p>
     <script>
-        fetch('data.json')
+        fetch('datos.json')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('temperatura').textContent = data.temperatura;
