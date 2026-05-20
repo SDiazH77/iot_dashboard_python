@@ -8,10 +8,10 @@
     <script>
         fetch('datos.json')
             .then(response => response.json())
-            .then(data => {
-                document.getElementById("temperatura").textContent = data.temperatura;
-                document.getElementById("humedad").textContent = data.humedad;
-                document.getElementById("fecha").textContent = data.fecha_hora;
+            .then(datos => {
+                document.getElementById("temperatura").textContent = datos.temperatura;
+                document.getElementById("humedad").textContent = datos.humedad;
+                document.getElementById("fecha").textContent = datos.fecha_hora;
             })
     </script>
 
